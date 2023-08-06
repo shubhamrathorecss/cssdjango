@@ -1,0 +1,91 @@
+{% load static %} {% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static '/css/all.min.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/admin.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/bootstrap.css' %}" />
+</head>
+<body class="wrapper">
+    <div class="admin-page">
+      <div class="sidenav">
+        <div class="sidenav-logo">
+          <a href="" class="sidenav-brand">Cloud Security Space</a>
+        </div>
+        <div class="sidenav-menu-section">
+          <ul class="sidenav-list">
+            <li class="sidenav-item active">
+              <a href="" class="sidenav-link">
+                <i class="fa-solid fa-cubes"></i>
+                <span class="sidenav-link-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="sidenav-item">
+              <a href="" class="sidenav-link">
+                <i class="fa-solid fa-users"></i>
+                <span class="sidenav-link-text">Users</span>
+              </a>
+            </li>
+            <li class="sidenav-item">
+              <a href="" class="sidenav-link">
+                <i href="/blogs" class="fa-brands fa-blogger-b"></i>
+                <span class="sidenav-link-text">Blogs</span>
+              </a>
+            </li>
+            <li class="sidenav-item">
+              <a href="" class="sidenav-link">
+                <i class="fa-regular fa-address-book"></i>
+                <span class="sidenav-link-text">Contacts</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <main class="main-section">
+        <header class="main-nav">
+          <div class="left-nav">
+            <button class="sidenav-toggler">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="main-search">
+              <i class="fa-solid fa-search"></i>
+              <input type="text" class="nav-search" placeholder="Search" />
+            </div>
+          </div>
+          <div class="right-nav">
+            <div class="dropdown">
+              <a
+                class="btn btn-dark dropdown-toggle d-flex align-items-center gap-2"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-user"></i
+                >shubham.rathore@cloudesecurity.space
+              </a>
+
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Change Password</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Sign out</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </header>
+        <main class="page">
+          <div class="card card-body">
+            {% block content %}{% endblock %}
+          </div>
+        </main>
+      </main>
+    </div>
+    <script src="{% static '/js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static '/js/all.min.js' %}"></script>
+</body>
+</html>

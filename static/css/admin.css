@@ -1,0 +1,203 @@
+/*---------------- Roboto slab variants ----------------*/
+@font-face {
+  font-family: "InterBlack";
+  src: url("../fonts/Inter/Inter-Black.ttf");
+}
+@font-face {
+  font-family: "InterBold";
+  src: url("../fonts/Inter/Inter-Bold.ttf");
+}
+@font-face {
+  font-family: "InterExtraBold";
+  src: url("../fonts/Inter/Inter-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "InterExtraLight";
+  src: url("../fonts/Inter/Inter-ExtraLight.ttf");
+}
+@font-face {
+  font-family: "InterLight";
+  src: url("../fonts/Inter/Inter-Light.ttf");
+}
+@font-face {
+  font-family: "InterMedium";
+  src: url("../fonts/Inter/Inter-Medium.ttf");
+}
+@font-face {
+  font-family: "InterRegular";
+  src: url("../fonts/Inter/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: "InterSemiBold";
+  src: url("../fonts/Inter/Inter-SemiBold.ttf");
+}
+@font-face {
+  font-family: "InterThin";
+  src: url("../fonts/Inter/Inter-Thin.ttf");
+}
+/*---------------- Roboto slab variants ----------------*/
+/*---------------- Roboto slab variants ----------------*/
+@font-face {
+  font-family: "RobotoSlabBlack";
+  src: url("../fonts/RobotoSlab/RobotoSlab-Black.ttf");
+}
+@font-face {
+  font-family: "RobotoSlabBold";
+  src: url("../fonts/RobotoSlab/RobotoSlab-Bold.ttf");
+}
+@font-face {
+  font-family: "RobotoSlabExtraBold";
+  src: url("../fonts/RobotoSlab/RobotoSlab-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "RobotoSlabExtraLight";
+  src: url("../fonts/RobotoSlab/RobotoSlab-ExtraLight.ttf");
+}
+@font-face {
+  font-family: "RobotoSlabLight";
+  src: url("../fonts/RobotoSlab/RobotoSlab-Light.ttf");
+}
+@font-face {
+  font-family: "RobotoSlabMedium";
+  src: url("../fonts/RobotoSlab/RobotoSlab-Medium.ttf");
+}
+@font-face {
+  font-family: "RobotoSlabRegular";
+  src: url("../fonts/RobotoSlab/RobotoSlab-Regular.ttf");
+}
+@font-face {
+  font-family: "RobotoSlabSemiBold";
+  src: url("../fonts/RobotoSlab/RobotoSlab-SemiBold.ttf");
+}
+@font-face {
+  font-family: "RobotoSlabThin";
+  src: url("../fonts/RobotoSlab/RobotoSlab-Thin.ttf");
+}
+/*---------------- Roboto slab variants ----------------*/
+/*!
+ * Bootstrap  v5.3.0 (https://getbootstrap.com/)
+ * Copyright 2011-2023 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+/*------------ fonts ------------*/
+/*------------ fonts ------------*/
+
+* {
+  font-family: "InterRegular" !important;
+}
+.main-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: 50px;
+  align-items: center;
+  background-color: #9ec5fe;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.05));
+}
+.main-nav .left-nav {
+  display: flex;
+  gap: 10px;
+}
+.main-nav .left-nav .sidenav-toggler {
+  border: none;
+  outline: none;
+  padding: 5px 15px;
+  font-size: 1.1rem;
+}
+.main-nav .left-nav .main-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  border: 1px solid #dfdfdf;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.main-nav .left-nav .main-search .nav-search {
+  border: none;
+  outline: none;
+}
+
+.sidenav {
+  width: 250px;
+  background-color: #fff;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.05));
+}
+.sidenav .sidenav-logo {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px 12px;
+  border-bottom: 1px solid #dfdfdf;
+}
+.sidenav .sidenav-logo .sidenav-brand {
+  font-family: "RobotoSlabRegular";
+  text-decoration: none;
+  color: #000;
+  font-size: 1.3rem;
+}
+.sidenav .sidenav-menu-section {
+  padding: 5px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.sidenav .sidenav-menu-section .sidenav-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sidenav .sidenav-menu-section .sidenav-list .sidenav-item {
+  padding: 7px 12px;
+}
+.sidenav .sidenav-menu-section .sidenav-list .sidenav-item .sidenav-link {
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  align-items: center;
+  color: #000;
+}
+.sidenav .sidenav-menu-section .sidenav-list .sidenav-item:hover {
+  background-color: #9ec5fe;
+}
+.sidenav .sidenav-menu-section .sidenav-list .sidenav-item:active {
+  background-color: #9ec5fe;
+}
+.sidenav .sidenav-menu-section .sidenav-list .sidenav-item.active {
+  background-color: #9ec5fe;
+}
+.sidenav .sidenav-menu-section .sidenav-list .sidenav-item.active {
+  background-color: #9ec5fe;
+}
+
+.admin-page {
+  position: relative;
+  height: 100%;
+  max-height: 100vh;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0px;
+  padding: 0px;
+  overflow: auto;
+  display: flex;
+  flex: 1 11;
+}
+
+.main-section {
+  width: calc(100% - 250px);
+  height: 100%;
+  max-height: 100vh;
+  display: block;
+  overflow: auto;
+}
+.main-section .page {
+  height: calc(100vh - 50px);
+  width: 100%;
+  padding: 10px;
+}

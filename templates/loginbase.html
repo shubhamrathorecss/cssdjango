@@ -1,0 +1,25 @@
+{% load static %} {% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static '/css/bootstrap.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/login.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/all.min.css' %}" />
+  </head>
+  <body class="wrapper">
+    <div class="login-page">
+      <div class="login-left">
+        <img src="{% static '/images/mainlanding.png' %}" alt="" />
+      </div>
+      <div class="login-form-panel">
+        {% block header %}{% endblock %}
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+    <script src="{% static '/js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static '/js/all.min.js' %}"></script>
+  </body>
+</html>
